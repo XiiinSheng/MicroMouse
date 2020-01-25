@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1700,6 +1714,12 @@
 <part name="R22" library="RESISTOR_0805IN_2012MM" deviceset="RESISTOR_0805IN_2012MM" device="" value="30K"/>
 <part name="GND30" library="SUPPLY" deviceset="GND" device=""/>
 <part name="VBAT4" library="SUPPLY" deviceset="VBAT" device=""/>
+<part name="+3V8" library="SUPPLY" deviceset="+3V3" device=""/>
+<part name="+3V9" library="SUPPLY" deviceset="+3V3" device=""/>
+<part name="+3V11" library="SUPPLY" deviceset="+3V3" device=""/>
+<part name="P+4" library="SUPPLY" deviceset="+5V" device=""/>
+<part name="+3V12" library="SUPPLY" deviceset="+3V3" device=""/>
+<part name="+3V10" library="SUPPLY" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1855,9 +1875,9 @@
 <attribute name="NAME" x="283.464" y="-294.259" size="1.778" layer="95"/>
 <attribute name="VALUE" x="283.464" y="-299.339" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="292.1" y="-309.88" smashed="yes">
-<attribute name="NAME" x="293.624" y="-306.959" size="1.778" layer="95"/>
-<attribute name="VALUE" x="293.624" y="-312.039" size="1.778" layer="96"/>
+<instance part="C10" gate="G$1" x="292.1" y="-312.42" smashed="yes">
+<attribute name="NAME" x="293.624" y="-309.499" size="1.778" layer="95"/>
+<attribute name="VALUE" x="293.624" y="-314.579" size="1.778" layer="96"/>
 </instance>
 <instance part="C11" gate="G$1" x="309.88" y="-259.08" smashed="yes">
 <attribute name="NAME" x="311.404" y="-256.159" size="1.778" layer="95"/>
@@ -2071,6 +2091,24 @@
 <instance part="VBAT4" gate="G$1" x="299.72" y="-30.48" smashed="yes" rot="R270">
 <attribute name="VALUE" x="297.18" y="-27.94" size="1.778" layer="96"/>
 </instance>
+<instance part="+3V8" gate="G$1" x="309.88" y="-243.84" smashed="yes">
+<attribute name="VALUE" x="307.34" y="-248.92" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V9" gate="G$1" x="426.72" y="-266.7" smashed="yes">
+<attribute name="VALUE" x="424.18" y="-271.78" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V11" gate="G$1" x="347.98" y="-337.82" smashed="yes">
+<attribute name="VALUE" x="345.44" y="-342.9" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+4" gate="1" x="220.98" y="-22.86" smashed="yes" rot="R270">
+<attribute name="VALUE" x="215.9" y="-20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V12" gate="G$1" x="393.7" y="-332.74" smashed="yes">
+<attribute name="VALUE" x="391.16" y="-337.82" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V10" gate="G$1" x="292.1" y="-299.72" smashed="yes">
+<attribute name="VALUE" x="289.56" y="-304.8" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2193,7 +2231,6 @@
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="292.1" y1="-314.96" x2="292.1" y2="-312.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -2427,9 +2464,9 @@
 <wire x1="210.82" y1="-33.02" x2="210.82" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="-33.02" x2="210.82" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="210.82" y="-33.02"/>
-<junction x="210.82" y="-22.86"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="210.82" y1="-22.86" x2="218.44" y2="-22.86" width="0.1524" layer="91"/>
-<label x="215.9" y="-22.86" size="1.778" layer="95"/>
+<junction x="210.82" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -2556,43 +2593,17 @@
 <junction x="322.58" y="-248.92"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="-248.92" x2="309.88" y2="-254" width="0.1524" layer="91"/>
-<label x="309.88" y="-243.84" size="1.778" layer="95" rot="R90"/>
-<wire x1="309.88" y1="-248.92" x2="309.88" y2="-243.84" width="0.1524" layer="91"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="309.88" y1="-248.92" x2="309.88" y2="-246.38" width="0.1524" layer="91"/>
 <junction x="309.88" y="-248.92"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="-304.8" x2="292.1" y2="-294.64" width="0.1524" layer="91"/>
-<pinref part="STM32F1" gate="G$1" pin="VDDA"/>
-<wire x1="327.66" y1="-304.8" x2="292.1" y2="-304.8" width="0.1524" layer="91"/>
-<junction x="292.1" y="-304.8"/>
-<label x="292.1" y="-299.72" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="347.98" y1="-342.9" x2="347.98" y2="-337.82" width="0.1524" layer="91"/>
-<label x="347.98" y="-342.9" size="1.778" layer="95" rot="R90"/>
-<pinref part="STM32F1" gate="G$1" pin="VDD_0"/>
-<wire x1="350.52" y1="-330.2" x2="350.52" y2="-342.9" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="-342.9" x2="347.98" y2="-342.9" width="0.1524" layer="91"/>
-<junction x="347.98" y="-342.9"/>
-</segment>
-<segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="393.7" y1="-340.36" x2="383.54" y2="-340.36" width="0.1524" layer="91"/>
-<pinref part="STM32F1" gate="G$1" pin="VDD_1"/>
-<wire x1="383.54" y1="-340.36" x2="383.54" y2="-330.2" width="0.1524" layer="91"/>
-<wire x1="393.7" y1="-340.36" x2="393.7" y2="-332.74" width="0.1524" layer="91"/>
-<junction x="393.7" y="-340.36"/>
-<label x="393.7" y="-337.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="STM32F1" gate="G$1" pin="VDD_2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="401.32" y1="-274.32" x2="426.72" y2="-274.32" width="0.1524" layer="91"/>
-<wire x1="426.72" y1="-274.32" x2="426.72" y2="-266.7" width="0.1524" layer="91"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="426.72" y1="-274.32" x2="426.72" y2="-269.24" width="0.1524" layer="91"/>
 <junction x="426.72" y="-274.32"/>
-<label x="426.72" y="-271.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="LED-PWR" gate="G$1" pin="A"/>
@@ -2618,6 +2629,34 @@
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <pinref part="MTR_R" gate="G$1" pin="ENC_VDD"/>
 <wire x1="220.98" y1="-307.34" x2="220.98" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="STM32F1" gate="G$1" pin="VDD_0"/>
+<wire x1="350.52" y1="-330.2" x2="350.52" y2="-340.36" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="-340.36" x2="347.98" y2="-340.36" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="347.98" y1="-340.36" x2="347.98" y2="-342.9" width="0.1524" layer="91"/>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<junction x="347.98" y="-340.36"/>
+</segment>
+<segment>
+<pinref part="STM32F1" gate="G$1" pin="VDD_1"/>
+<wire x1="383.54" y1="-330.2" x2="383.54" y2="-337.82" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="-337.82" x2="393.7" y2="-337.82" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="393.7" y1="-337.82" x2="393.7" y2="-340.36" width="0.1524" layer="91"/>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+<wire x1="393.7" y1="-337.82" x2="393.7" y2="-335.28" width="0.1524" layer="91"/>
+<junction x="393.7" y="-337.82"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
+<wire x1="292.1" y1="-302.26" x2="292.1" y2="-304.8" width="0.1524" layer="91"/>
+<pinref part="STM32F1" gate="G$1" pin="VDDA"/>
+<wire x1="292.1" y1="-304.8" x2="292.1" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="-304.8" x2="292.1" y2="-304.8" width="0.1524" layer="91"/>
+<junction x="292.1" y="-304.8"/>
 </segment>
 </net>
 <net name="TX" class="0">
