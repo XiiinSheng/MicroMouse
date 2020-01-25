@@ -1,0 +1,36 @@
+[Eagle]
+Version="09 05 02"
+Platform="Windows"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/2X4_PIN_HEADER.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/BATT_JST-PH_3PIN.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/CAP_CERAMIC_0805IN_2012MM.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/CAP_TANT_1210IN_3528MM.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/LED_0805.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/MAZE.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/MOTOR_ENCODER_HEADER.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/MOUSE_OUTLINE_2WHEEL.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/POLOLU_BUTTON.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/POLOLU_SWITCH.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/REG_3V3_LM3940.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/REG_5V_MURATA.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/RESISTOR_0805IN_2012MM.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/SFH4545.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/STM32F4_401_410_411_412_413_446.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/SUPPLY.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/TC4427.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/TEFT4300.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/ULN2003A.lbr"
+UsedLibrary="C:/Users/Xin Sheng/Documents/EAGLE/libraries/Simple Micromouse Library/ZXMHC3.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="1920 1080"
+Window="Win_1"
