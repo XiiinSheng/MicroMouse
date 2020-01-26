@@ -1,0 +1,12 @@
+#gitignore for Eagle
+# Backup files
+*.s#?
+*.b#?
+*.l#?
+*.b$?
+*.s$?
+*.l$?
+
+# Autorouter files
+*.pro
+*.job
