@@ -7,9 +7,6 @@
 *.s$*
 *.l$*
 
-*.s#*
-*.b#*
-
 # Autorouter files
 *.pro
 *.job
