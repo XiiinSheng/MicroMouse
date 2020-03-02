@@ -1625,7 +1625,7 @@
 <part name="GND2" library="SUPPLY" deviceset="GND" device=""/>
 <part name="P+1" library="SUPPLY" deviceset="+5V" device=""/>
 <part name="C1" library="CAP_TANT_1210IN_3528MM" deviceset="CAP_TANT_1210IN_3528MM" device="" value="47uF"/>
-<part name="C2" library="CAP_TANT_1210IN_3528MM" deviceset="CAP_TANT_1210IN_3528MM" device="" value="47"/>
+<part name="C2" library="CAP_TANT_1210IN_3528MM" deviceset="CAP_TANT_1210IN_3528MM" device="" value="47uF"/>
 <part name="C3" library="CAP_CERAMIC_0805IN_2012MM" deviceset="CAP_CERAMIC_0805IN_2012MM" device="" value="10uF"/>
 <part name="C4" library="CAP_TANT_1210IN_3528MM" deviceset="CAP_TANT_1210IN_3528MM" device="" value="47uF"/>
 <part name="+3V1" library="SUPPLY" deviceset="+3V3" device=""/>
