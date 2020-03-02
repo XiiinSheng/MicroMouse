@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1372,15 +1372,6 @@ design rules under a new name.</description>
 <contactref element="REG_5V_1" pad="OUT"/>
 <contactref element="C2" pad="A"/>
 <contactref element="REG_3V3_1" pad="IN"/>
-<contactref element="ZXMHC3_L" pad="P1S/P2S"/>
-<contactref element="ZXMHC3_R" pad="P1S/P2S"/>
-<wire x1="24.13" y1="0" x2="27.94" y2="0" width="1.016" layer="1"/>
-<wire x1="27.94" y1="0" x2="28.575" y2="0.635" width="1.016" layer="1"/>
-<wire x1="28.575" y1="0.635" x2="28.575" y2="2.54" width="1.016" layer="1"/>
-<wire x1="19.05" y1="5.08" x2="14.605" y2="0.635" width="1.016" layer="1"/>
-<wire x1="14.605" y1="0.635" x2="3.81" y2="0.635" width="1.016" layer="1"/>
-<wire x1="3.81" y1="0.635" x2="3.175" y2="1.27" width="1.016" layer="1"/>
-<wire x1="3.175" y1="1.27" x2="3.175" y2="2.54" width="1.016" layer="1"/>
 <wire x1="20.315" y1="-3.81" x2="20.315" y2="3.815" width="1.016" layer="1"/>
 <wire x1="19.05" y1="5.08" x2="23.749" y2="9.779" width="1.27" layer="16"/>
 <via x="26.924" y="46.99" extent="1-16" drill="1.3208"/>
@@ -1409,7 +1400,6 @@ design rules under a new name.</description>
 <wire x1="26.035" y1="73.025" x2="24.92215625" y2="74.13784375" width="0.508" layer="1"/>
 <wire x1="24.92215625" y1="74.13784375" x2="24.348865625" y2="74.13784375" width="0.508" layer="1"/>
 <wire x1="19.05" y1="5.08" x2="20.315" y2="3.815" width="1.016" layer="1"/>
-<wire x1="20.315" y1="3.815" x2="24.13" y2="0" width="1.016" layer="1"/>
 </signal>
 <signal name="V+">
 <contactref element="SWITCH_1" pad="PIN3"/>
@@ -1443,6 +1433,13 @@ design rules under a new name.</description>
 <wire x1="9.155" y1="8.625" x2="9.155" y2="15.24" width="0.3048" layer="1"/>
 <wire x1="34.29" y1="-1.265" x2="34.285" y2="-1.27" width="1.016" layer="1"/>
 <wire x1="34.29" y1="2.54" x2="34.29" y2="-1.265" width="1.016" layer="1"/>
+<contactref element="ZXMHC3_L" pad="P1S/P2S"/>
+<contactref element="ZXMHC3_R" pad="P1S/P2S"/>
+<wire x1="3.175" y1="2.54" x2="3.175" y2="0.635" width="0.8128" layer="1"/>
+<wire x1="3.175" y1="0.635" x2="1.905" y2="-0.635" width="0.8128" layer="1"/>
+<wire x1="1.905" y1="-0.635" x2="-2.54" y2="-0.635" width="0.8128" layer="1"/>
+<wire x1="28.575" y1="2.54" x2="28.575" y2="-3.805" width="0.8128" layer="1"/>
+<wire x1="28.575" y1="-3.805" x2="28.57" y2="-3.81" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="SWITCH_1" pad="PIN2"/>

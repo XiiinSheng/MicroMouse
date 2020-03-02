@@ -1682,8 +1682,6 @@
 <part name="GND23" library="SUPPLY" deviceset="GND" device=""/>
 <part name="GND24" library="SUPPLY" deviceset="GND" device=""/>
 <part name="GND25" library="SUPPLY" deviceset="GND" device=""/>
-<part name="P+2" library="SUPPLY" deviceset="+5V" device=""/>
-<part name="P+3" library="SUPPLY" deviceset="+5V" device=""/>
 <part name="+3V4" library="SUPPLY" deviceset="+3V3" device=""/>
 <part name="+3V5" library="SUPPLY" deviceset="+3V3" device=""/>
 <part name="VBAT2" library="SUPPLY" deviceset="VBAT" device=""/>
@@ -1721,6 +1719,8 @@
 <part name="+3V12" library="SUPPLY" deviceset="+3V3" device=""/>
 <part name="+3V10" library="SUPPLY" deviceset="+3V3" device=""/>
 <part name="GND31" library="SUPPLY" deviceset="GND" device=""/>
+<part name="VBAT5" library="SUPPLY" deviceset="VBAT" device=""/>
+<part name="VBAT6" library="SUPPLY" deviceset="VBAT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1985,12 +1985,6 @@
 <instance part="GND25" gate="1" x="220.98" y="-350.52" smashed="yes">
 <attribute name="VALUE" x="219.71" y="-350.52" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="1" x="187.96" y="-233.68" smashed="yes">
-<attribute name="VALUE" x="185.42" y="-238.76" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+3" gate="1" x="187.96" y="-299.72" smashed="yes">
-<attribute name="VALUE" x="185.42" y="-304.8" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="+3V4" gate="G$1" x="220.98" y="-233.68" smashed="yes">
 <attribute name="VALUE" x="218.44" y="-238.76" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -2112,6 +2106,12 @@
 </instance>
 <instance part="GND31" gate="1" x="48.26" y="-76.2" smashed="yes">
 <attribute name="VALUE" x="46.99" y="-76.2" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="VBAT5" gate="G$1" x="187.96" y="-233.68" smashed="yes">
+<attribute name="VALUE" x="185.42" y="-236.22" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="VBAT6" gate="G$1" x="187.96" y="-299.72" smashed="yes">
+<attribute name="VALUE" x="185.42" y="-302.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -2505,18 +2505,6 @@
 <wire x1="363.22" y1="-119.38" x2="369.57" y2="-119.38" width="0.1524" layer="91"/>
 <junction x="363.22" y="-119.38"/>
 </segment>
-<segment>
-<pinref part="ZXMHC3_L" gate="G$1" pin="P1S/P2S"/>
-<wire x1="172.72" y1="-254" x2="187.96" y2="-254" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="187.96" y1="-236.22" x2="187.96" y2="-254" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ZXMHC3_R" gate="G$1" pin="P1S/P2S"/>
-<wire x1="172.72" y1="-322.58" x2="187.96" y2="-322.58" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="187.96" y1="-322.58" x2="187.96" y2="-302.26" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -2556,6 +2544,18 @@
 <wire x1="287.02" y1="-30.48" x2="297.18" y2="-30.48" width="0.1524" layer="91"/>
 <label x="292.1" y="-30.48" size="1.778" layer="95"/>
 <pinref part="VBAT4" gate="G$1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="ZXMHC3_L" gate="G$1" pin="P1S/P2S"/>
+<wire x1="172.72" y1="-254" x2="187.96" y2="-254" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-236.22" x2="187.96" y2="-254" width="0.1524" layer="91"/>
+<pinref part="VBAT5" gate="G$1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="ZXMHC3_R" gate="G$1" pin="P1S/P2S"/>
+<wire x1="172.72" y1="-322.58" x2="187.96" y2="-322.58" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-322.58" x2="187.96" y2="-302.26" width="0.1524" layer="91"/>
+<pinref part="VBAT6" gate="G$1" pin="V+"/>
 </segment>
 </net>
 <net name="N$9" class="0">
